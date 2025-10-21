@@ -3,10 +3,11 @@ import "./HeadStart.css";
 import { MdEmail } from "react-icons/md";
 import { FaGithub } from "react-icons/fa";
 import { FaRegCalendarAlt } from "react-icons/fa";
+import { FaFacebook, FaInstagram } from "react-icons/fa";
 
 export default function HeadStart() {
   return (
-    <header className="mt-[8%] animate-fade-in">
+    <header className="mt-[8%] head-start-fade-in">
       {/* Container with responsive layout */}
       <div className="flex flex-col lg:flex-row justify-between gap-4">
         
@@ -59,28 +60,55 @@ export default function HeadStart() {
           </div>
         </div>
 
-        {/* Right section: Buttons inline, top-right */}
-        <div className="flex flex-row gap-3 mt-0 items-start w-full lg:w-auto">
-          <a
-            href="https://mail.google.com/mail/?view=cm&fs=1&to=bentf24@gmail.com&su=Hello&body=Hi%20there"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="flex-1 flex items-center justify-center gap-2 px-4 py-3 text-sm font-medium rounded-lg border border-gray-700 text-gray-200 hover:bg-gray-800 transition-all duration-200 whitespace-nowrap"
-          >
-            <MdEmail className="text-lg" />
-            Send Email
-          </a>
-          <a
-            target="_blank"
-            href="https://calendly.com/bentf24/30min"
-            className="flex-1 flex items-center justify-center gap-2 px-4 py-3 text-sm font-medium rounded-lg bg-blue-500 text-white hover:bg-blue-600 transition-all duration-200 whitespace-nowrap"
-          >
-            <FaRegCalendarAlt className="text-lg" />
-            Schedule a Call
-          </a>
+        {/* RIGHT SECTION */}
+        <div className="flex flex-col items-end gap-3 w-full lg:w-auto">
+          {/* Schedule button */}
+          <div className="flex justify-end w-full">
+            <a
+              target="_blank"
+              href="https://calendly.com/bentf24/30min"
+              className="flex items-center justify-center gap-2 px-5 py-3 text-sm font-medium rounded-lg bg-blue-500 text-white hover:bg-blue-600 transition-all duration-200 whitespace-nowrap w-[410px]"
+            >
+              <FaRegCalendarAlt className="text-lg" />
+              Schedule a Call
+            </a>
+          </div>
+
+          {/* Social buttons */}
+          <div className="flex w-full gap-3">
+            <a
+              href="https://mail.google.com/mail/?view=cm&fs=1&to=bentf24@gmail.com&su=Hello&body=Hi%20there"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="flex-1 flex items-center justify-center gap-2 px-5 py-3 text-sm font-medium rounded-lg border border-gray-700 text-gray-200 hover:bg-gray-800 transition-all duration-200 whitespace-nowrap"
+            >
+              <MdEmail className="text-lg text-white" />
+              Email
+            </a>
+
+            <a
+              href="https://www.facebook.com/benobre24"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="flex-1 flex items-center justify-center gap-2 px-5 py-3 text-sm font-medium rounded-lg border border-gray-700 text-gray-200 hover:bg-gray-800 transition-all duration-200 whitespace-nowrap"
+            >
+              <FaFacebook className="text-lg text-blue-500" />
+              Facebook
+            </a>
+
+            <a
+              href="https://www.instagram.com/bndct24/"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="flex-1 flex items-center justify-center gap-2 px-5 py-3 text-sm font-medium rounded-lg border border-gray-700 text-gray-200 hover:bg-gray-800 transition-all duration-200 whitespace-nowrap"
+            >
+              <FaInstagram className="text-lg text-pink-500" />
+              Instagram
+            </a>
+          </div>
         </div>
+
       </div>
     </header>
-
   );
 }
