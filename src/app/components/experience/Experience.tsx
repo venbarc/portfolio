@@ -23,7 +23,7 @@ export default function Experience() {
     {
       title: "Erovoutika International",
       description: "Lead/ Fullstack Developer",
-      year: "Sept 2022 - Sept 2023",
+      year: "Sept 2022 - 2023",
     },
     {
       title: "Hello World",
