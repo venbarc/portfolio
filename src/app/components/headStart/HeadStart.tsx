@@ -62,7 +62,9 @@ export default function HeadStart() {
     {/* Right section: Buttons inline, top-right */}
     <div className="flex flex-row gap-3 mt-0 items-start w-full lg:w-auto">
       <a
-        href="mailto:bentf24@gmail.com"
+        href="https://mail.google.com/mail/?view=cm&fs=1&to=bentf24@gmail.com&su=Hello&body=Hi%20there"
+        target="_blank"
+        rel="noopener noreferrer"
         className="flex-1 flex items-center justify-center gap-2 px-4 py-3 text-sm font-medium rounded-lg border border-gray-700 text-gray-200 hover:bg-gray-800 transition-all duration-200 whitespace-nowrap"
       >
         <MdEmail className="text-lg" />
