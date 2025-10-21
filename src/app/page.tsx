@@ -1,7 +1,8 @@
-import About from "./components/about/About";
+import BeyondCoding from "./components/beyondCoding/BeyondCoding";
 import Experience from "./components/experience/Experience";
 import HeadStart from "./components/headStart/HeadStart";
 import Resume from "./components/resume/Resume";
+import TechStack from "./components/TechStacks/TechStacks";
 
 export default function Home() {
   return (
@@ -9,21 +10,26 @@ export default function Home() {
       <div className="mx-[3%] sm:mx-[22%]"> 
         <HeadStart />
 
-        <div className="grid sm:grid-cols-[60%_40%] gap-1">
-          {/* Column 1 */}
-          <div className="h-full">
-            <Experience />
+          {/* Flexbox alternative that definitely respects margins */}
+          <div className="flex flex-col sm:flex-row gap-3 items-start mt-6 w-full">
+            {/* Left Column - 60% */}
+            <div className="w-full sm:w-[60%]">
+              <Experience />
+            </div>
+
+            {/* Right Column - 40% */}
+            <div className="w-full sm:w-[40%] grid grid-rows-[auto_auto] gap-3">
+              <div>
+                <BeyondCoding />
+              </div>
+              <div>
+                <Resume />              
+              </div>
+            </div>
           </div>
 
-          {/* Column 2 */}
-          <div className="grid grid-rows-2 gap-2 h-full mt-2">
-            <div className="h-full">
-              <About />
-            </div>
-            <div className="h-full">
-              <Resume />              
-            </div>
-          </div>
+        <div className="mt-4 w-full"> {/* Added margin top to separate TechStack */}
+          <TechStack />
         </div>
 
       </div>
