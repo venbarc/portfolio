@@ -22,7 +22,7 @@ export default function HeadStart() {
           <div className="flex flex-col">
             {/* Name + Verified */}
             <div className="flex items-baseline space-x-2">
-              <h1 className="text-3xl font-bold tracking-wide">Ben Obre</h1>
+              <h1 className="text-2xl font-bold tracking-wide">Ben Obre</h1>
               <svg
                 viewBox="0 0 22 22"
                 xmlns="http://www.w3.org/2000/svg"
@@ -40,7 +40,7 @@ export default function HeadStart() {
             </div>
 
             {/* Role */}
-            <p className="text-lg font-semibold text-gray-300 mt-1">Full Stack Developer</p>
+            <p className="text-base font-semibold text-gray-300 mt-1">Full Stack Developer</p>
 
             {/* GitHub + Phone */}
             <div className="flex items-center gap-2 mt-2">
@@ -50,10 +50,10 @@ export default function HeadStart() {
                 rel="noopener noreferrer"
                 className="flex items-center gap-2 px-4 py-2 text-sm font-medium rounded-lg border border-gray-700 text-gray-200 hover:bg-gray-800 transition-all duration-200"
               >
-                <FaGithub className="text-lg" />
+                <FaGithub className="text-xs" />
                 venbarc
               </a>
-              <a href="tel:+639393370186" className="text-sm hover:text-blue-400 transition-colors">
+              <a href="tel:+639393370186" className="text-xs hover:text-blue-400 transition-colors">
                 +63 9393370186
               </a>
             </div>
@@ -80,7 +80,7 @@ export default function HeadStart() {
               href="https://mail.google.com/mail/?view=cm&fs=1&to=bentf24@gmail.com&su=Hello&body=Hi%20there"
               target="_blank"
               rel="noopener noreferrer"
-              className="flex-1 flex items-center justify-center gap-2 px-5 py-3 text-sm font-medium rounded-lg border border-gray-700 text-gray-200 hover:bg-gray-800 transition-all duration-200 whitespace-nowrap"
+              className="flex-1 flex items-center justify-center gap-2 px-5 py-2 text-xs font-medium rounded-lg border border-gray-700 text-gray-200 hover:bg-gray-800 transition-all duration-200 whitespace-nowrap"
             >
               <MdEmail className="text-lg text-white" />
               Email
@@ -90,7 +90,7 @@ export default function HeadStart() {
               href="https://www.facebook.com/benobre24"
               target="_blank"
               rel="noopener noreferrer"
-              className="flex-1 flex items-center justify-center gap-2 px-5 py-3 text-sm font-medium rounded-lg border border-gray-700 text-gray-200 hover:bg-gray-800 transition-all duration-200 whitespace-nowrap"
+              className="flex-1 flex items-center justify-center gap-2 px-5 py-2 text-xs font-medium rounded-lg border border-gray-700 text-gray-200 hover:bg-gray-800 transition-all duration-200 whitespace-nowrap"
             >
               <FaFacebook className="text-lg text-blue-500" />
               Facebook
@@ -100,7 +100,7 @@ export default function HeadStart() {
               href="https://www.instagram.com/bndct24/"
               target="_blank"
               rel="noopener noreferrer"
-              className="flex-1 flex items-center justify-center gap-2 px-5 py-3 text-sm font-medium rounded-lg border border-gray-700 text-gray-200 hover:bg-gray-800 transition-all duration-200 whitespace-nowrap"
+              className="flex-1 flex items-center justify-center gap-2 px-5 py-2 text-xs font-medium rounded-lg border border-gray-700 text-gray-200 hover:bg-gray-800 transition-all duration-200 whitespace-nowrap"
             >
               <FaInstagram className="text-lg text-pink-500" />
               Instagram

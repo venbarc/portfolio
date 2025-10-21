@@ -61,7 +61,7 @@ export default function Experience() {
             {/* Content */}
             <div className="space-y-1">
               <h3
-                className={`text-sm font-semibold transition-colors ${
+                className={`text-xs font-semibold transition-colors ${
                   item.highlight
                     ? "text-blue-400"
                     : "group-hover:text-blue-400 text-gray-300"
@@ -69,10 +69,10 @@ export default function Experience() {
               >
                 {item.title}
               </h3>
-              <div className="flex items-center justify-between text-sm">
+              <div className="flex items-center justify-between text-xs">
                 <span className="text-gray-400">{item.description}</span>
                 <span
-                  className={`text-[11px] font-mono px-3 py-1 rounded-full border font-light
+                  className={`text-[10px] font-mono px-3 py-1 rounded-full border font-light
                     ${
                       item.highlight
                         ? "bg-blue-400/10 border-blue-400/30 text-blue-300"

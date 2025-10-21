@@ -12,11 +12,10 @@ export default function About() {
 
       {/* Paragraph */}
       <p className="text-gray-400 text-sm sm:text-sm leading-relaxed text-start">
-        When I'm not writing code, I love staying active and enjoying life. I play 
-        basketball to keep fit, challenge my mind with chess, and spend quality 
-        time with friends every weekend. I also enjoy shopping occasionally to 
-        treat myself and explore new things. These moments help me recharge and 
-        bring fresh energy to my coding journey.
+        When I'm not writing code, I love staying active and enjoying life. I play basketball to keep fit, 
+        go to the gym, challenge my mind with chess, and spend quality time with friends every weekend. 
+        I also enjoy shopping occasionally to treat myself and explore new things. 
+        These moments help me recharge and bring fresh energy to my coding journey.
       </p>
     </section>
   );
