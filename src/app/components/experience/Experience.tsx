@@ -43,7 +43,8 @@ export default function Experience() {
       {/* Timeline */}
       <div className="relative space-y-6">
         {/* Vertical line */}
-        <div className="absolute left-2 top-0 bottom-0 w-px bg-gray-700"></div>
+        <div className="absolute left-[6px] top-0 bottom-0 w-px bg-gray-700"></div>
+        
 
         {experiences.map((item, index) => (
           <div key={index} className="relative pl-8 group">
