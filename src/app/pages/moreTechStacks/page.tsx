@@ -1,4 +1,5 @@
 "use client";
+import React from "react";
 import { useRouter } from "next/navigation";
 import { 
   Code2, 
@@ -74,7 +75,7 @@ export default function MoreTechStacks() {
   };
 
   const getTechIcon = (tech: string) => {
-    const icons: Record<string, JSX.Element> = {
+    const icons: Record<string, React.ReactNode> = {
       // Frontend
       "JavaScript": <Code2 className="w-4 h-4" />,
       "TypeScript": <Type className="w-4 h-4" />,
