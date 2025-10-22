@@ -194,7 +194,9 @@ export default function MoreTechStacks() {
                     className="px-3 py-2 text-base rounded-lg bg-white/5 text-gray-300 hover:bg-white/10 hover:text-white transition-all duration-300 flex items-center gap-2"
                     style={{ animationDelay: `${index * 50}ms` }}
                   >
-                    {getTechIcon(tech)}
+                    <span className="text-blue-300">
+                      {getTechIcon(tech)}
+                    </span>
                     {tech}
                   </span>
                 ))}
