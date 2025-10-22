@@ -16,13 +16,13 @@ export default function Experience() {
       year: "July 8 2024 - Nov 6 2025",
     },
     {
-      title: "Intellect Philippines",
-      description: "Software Developer",
+      title: "Software Developer",
+      description: "Intellect Philippines",
       year: "Feb 22 2024 - Jul 5 2024",
     },
     {
-      title: "Erovoutika International",
-      description: "Lead/ Fullstack Developer",
+      title: "Lead & Fullstack Developer",
+      description: "Erovoutika International",
       year: "Sept 2022 - 2023",
     },
     {

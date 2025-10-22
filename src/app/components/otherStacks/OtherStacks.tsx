@@ -86,7 +86,7 @@ export default function OtherStacks() {
   };
 
   return (
-    <section className="relative overflow-hidden border border-gray-700 rounded-2xl bg-[#0a0a0a] p-[6%] sm:p-[11%] col-span-1 space-y-4 group other-stack-fade-in cursor-pointer">
+    <section className="relative overflow-hidden border border-gray-700 rounded-2xl bg-[#0a0a0a] p-[6%] sm:p-[13%] col-span-1 space-y-4 group other-stack-fade-in cursor-pointer">
       {/* Header */}
       <div className="flex items-center justify-between">
         <div className="flex items-center gap-2">
@@ -113,10 +113,6 @@ export default function OtherStacks() {
           </span>
         ))}
       </div>
-
-      {/* Background Glow */}
-      <div className="absolute top-0 right-0 w-32 h-32 bg-purple-500/5 rounded-full blur-3xl pointer-events-none"></div>
-      <div className="absolute bottom-0 left-0 w-24 h-24 bg-pink-500/5 rounded-full blur-3xl pointer-events-none"></div>
     </section>
   );
 }

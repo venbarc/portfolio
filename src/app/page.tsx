@@ -4,6 +4,7 @@ import HeadStart from "./components/headStart/HeadStart";
 import Resume from "./components/resume/Resume";
 import TechStacks from "./components/techStacks/TechStacks";
 import OtherStacks from "./components/otherStacks/OtherStacks";
+import Footer from "./components/footer/Footer";
 
 export default function Home() {
   return (
@@ -43,6 +44,8 @@ export default function Home() {
             </div>
           </div>
         </div>
+        
+        <Footer />
 
       </div>
     </div>
