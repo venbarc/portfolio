@@ -1,9 +1,12 @@
 "use client";
 import "./TechStacks.css"
+import { useRouter } from "next/navigation";
 
 type TechCategory = 'frontend' | 'backend';
 
 export default function TechStacks() {
+  const router = useRouter();
+
   const techStacks: Record<TechCategory, string[]> = {
     frontend: ["TypeScript", "React", "JavaScript", "Next.js"],
     backend: ["Laravel", "PHP", "PostgreSQL", "MySQL"],
@@ -28,10 +31,13 @@ export default function TechStacks() {
   const getCategoryColor = (category: TechCategory) => {
     const colors = {
       frontend: "text-blue-400 border-blue-400/20 hover:border-blue-400/40",
-      backend: "text-green-400 border-green-400/20 hover:border-green-400/40",
-      devops: "text-purple-400 border-purple-400/20 hover:border-purple-400/40"
+      backend: "text-blue-400 border-blue-400/20 hover:border-blue-400/40",
     };
     return colors[category];
+  };
+
+  const handleSeeMore = () => {
+    router.push('/pages/moreTechStacks');
   };
 
   return (
@@ -46,7 +52,9 @@ export default function TechStacks() {
             Tech Stack
           </h2>
         </div>
-        <button className="text-xs text-gray-400 hover:text-white flex items-center gap-1 transition-all duration-300 group/btn px-3 py-1.5 rounded-lg bg-white/5 hover:bg-white/10 border border-white/10 hover:border-white/20">
+        <button 
+          onClick={handleSeeMore}
+          className="text-xs text-gray-400 hover:text-white flex items-center gap-1 transition-all duration-300 group/btn px-3 py-1.5 rounded-lg bg-white/5 hover:bg-white/10 border border-white/10 hover:border-white/20">
           See More
           <svg className="w-3 h-3 transition-transform group-hover/btn:translate-x-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
             <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />

@@ -18,48 +18,48 @@ export default function OtherStacks() {
   const getStackIcon = (stack: string) => {
     const icons: Record<string, React.ReactNode> = {
       Canva: (
-        <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+        <svg className="w-4 h-4 text-blue-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
           <circle cx="12" cy="12" r="9" strokeWidth="1.5" />
         </svg>
       ),
       OpenAi: (
-        <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+        <svg className="w-4 h-4 text-blue-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
           <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M8 10h.01M12 10h.01M16 10h.01M9 16H5a2 2 0 01-2-2V6a2 2 0 012-2h14a2 2 0 012 2v8a2 2 0 01-2 2h-5l-5 5v-5z" />
         </svg>
       ),
       DeepSeek: (
-        <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+        <svg className="w-4 h-4 text-blue-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
           <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M13 10V3L4 14h7v7l9-11h-7z" />
         </svg>
       ),
       Java: (
-        <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+        <svg className="w-4 h-4 text-blue-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
           <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M10 20l4-16m4 4l4 4-4 4M6 16l-4-4 4-4" />
         </svg>
       ),
       "C++": (
-        <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+        <svg className="w-4 h-4 text-blue-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
           <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M12 4l8 8-8 8-8-8 8-8z" />
         </svg>
       ),
       "C#": (
-        <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+        <svg className="w-4 h-4 text-blue-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
           <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M10 20l4-16M4 12h16" />
         </svg>
       ),
       "VS Code": (
-        <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+        <svg className="w-4 h-4 text-blue-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
           <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M3 7l9 5-9 5V7zm9 0l9 5-9 5V7z" />
         </svg>
       ),
       Postman: (
-        <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+        <svg className="w-4 h-4 text-blue-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
           <circle cx="12" cy="12" r="9" strokeWidth="1.5" />
           <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M12 8v4l3 2" />
         </svg>
       ),
       Figma: (
-        <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+        <svg className="w-4 h-4 text-blue-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
           <circle cx="12" cy="7" r="3" />
           <circle cx="12" cy="17" r="3" />
           <circle cx="17" cy="12" r="3" />
@@ -72,15 +72,15 @@ export default function OtherStacks() {
 
   const getStackColor = (stack: string) => {
     const colors: Record<string, string> = {
-      Canva: "text-pink-400 border-pink-400/20 hover:border-pink-400/40",
-      OpenAi: "text-green-400 border-green-400/20 hover:border-green-400/40",
-      DeepSeek: "text-blue-400 border-blue-400/20 hover:border-blue-400/40",
-      Java: "text-red-400 border-red-400/20 hover:border-red-400/40",
-      "C++": "text-purple-400 border-purple-400/20 hover:border-purple-400/40",
-      "C#": "text-cyan-400 border-cyan-400/20 hover:border-cyan-400/40",
-      "VS Code": "text-indigo-400 border-indigo-400/20 hover:border-indigo-400/40",
-      Postman: "text-orange-400 border-orange-400/20 hover:border-orange-400/40",
-      Figma: "text-pink-300 border-pink-300/20 hover:border-pink-300/40"
+      Canva: "text-gray-300 border-pink-400/20 hover:border-pink-400/40",
+      OpenAi: "text-gray-300 border-green-400/20 hover:border-green-400/40",
+      DeepSeek: "text-gray-300 border-blue-400/20 hover:border-blue-400/40",
+      Java: "text-gray-300 border-red-400/20 hover:border-red-400/40",
+      "C++": "text-gray-300 border-purple-400/20 hover:border-purple-400/40",
+      "C#": "text-gray-300 border-cyan-400/20 hover:border-cyan-400/40",
+      "VS Code": "text-gray-300 border-indigo-400/20 hover:border-indigo-400/40",
+      Postman: "text-gray-300 border-orange-400/20 hover:border-orange-400/40",
+      Figma: "text-gray-300 border-pink-300/20 hover:border-pink-300/40"
     };
     return colors[stack] || "text-gray-400 border-gray-400/20 hover:border-gray-400/40";
   };
