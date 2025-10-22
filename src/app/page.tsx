@@ -2,7 +2,7 @@ import BeyondCoding from "./components/beyondCoding/BeyondCoding";
 import Experience from "./components/experience/Experience";
 import HeadStart from "./components/headStart/HeadStart";
 import Resume from "./components/resume/Resume";
-import TechStacks from "./components/techStacks/TechStacks";
+import TechStacks from "./components/techStack/TechStack";
 import OtherStacks from "./components/otherStacks/OtherStacks";
 
 export default function Home() {

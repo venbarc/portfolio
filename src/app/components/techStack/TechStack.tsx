@@ -1,10 +1,10 @@
 "use client";
-import "./TechStacks.css"
+import "./TechStack.css"
 
 type TechCategory = 'frontend' | 'backend';
 
-export default function TechStacks() {
-  const techStacks: Record<TechCategory, string[]> = {
+export default function TechStack() {
+  const techStack: Record<TechCategory, string[]> = {
     frontend: ["TypeScript", "React", "JavaScript", "Next.js"],
     backend: ["Laravel", "PHP", "PostgreSQL", "MySQL"],
   };
@@ -56,7 +56,7 @@ export default function TechStacks() {
 
       {/* Tech Categories */}
       <div className="space-y-5">
-        {(Object.entries(techStacks) as [TechCategory, string[]][]).map(([category, technologies]) => (
+        {(Object.entries(techStack) as [TechCategory, string[]][]).map(([category, technologies]) => (
           <div key={category} className="group/category">
             {/* Category Header */}
             <div className="flex items-center gap-2 mb-3">
