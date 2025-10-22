@@ -6,7 +6,7 @@ export default function MyContributions() {
 
   const router = useRouter();
 
-  const projects = [
+  const contributions = [
     {
       title: "Full-Stack web app Platform",
       description: "Led development of a scalable web app solution with Laravel backend and React frontend",
@@ -22,7 +22,16 @@ export default function MyContributions() {
     {
       title: "Database Optimization",
       description: "Optimized query performance and implemented caching strategies for high-traffic app",
-    }
+    },
+    {
+      title: "CI/CD Pipeline Setup",
+      description: "Implemented automated testing and deployment pipeline with GitHub Actions",
+    },
+    {
+      title: "Authentication System",
+      description: "Built secure authentication with multi-factor authentication and session management",
+    },
+    
   ];
 
   const handleSeeMore = () => {
@@ -30,7 +39,7 @@ export default function MyContributions() {
   };
 
   return (
-    <section className="relative overflow-hidden border border-gray-700 rounded-2xl p-6 col-span-1 space-y-4 group my-contributions-fade-in">
+    <section className="relative overflow-hidden border border-gray-700 rounded-2xl p-[1.40rem] col-span-1 space-y-4 group my-contributions-fade-in">
       {/* Header */}
       <div className="flex items-center justify-between">
         <div className="flex items-center gap-2">
@@ -49,15 +58,15 @@ export default function MyContributions() {
         </button>
       </div>
 
-      {/* Projects Grid */}
+      {/* contributions Grid */}
       <div className="grid grid-cols-1 sm:grid-cols-2 gap-3">
-        {projects.map((project, index) => (
-          <div key={project.title} className="bento-card p-4 space-y-2 hover:bg-white/5 transition-all duration-300">
-              <h3 className="text-sm font-semibold text-white group-hover/project:text-blue-400 transition-colors">
-                {project.title}
+        {contributions.map((contribution, index) => (
+          <div key={contribution.title} className="bento-card p-4 space-y-2 hover:bg-white/5 transition-all duration-300">
+              <h3 className="text-sm font-semibold text-white group-hover/contribution:text-blue-400 transition-colors">
+                {contribution.title}
               </h3>
               <p className="text-xs text-gray-400 leading-relaxed">
-                {project.description}
+                {contribution.description}
               </p>
           </div>
         ))}

@@ -5,7 +5,7 @@ import { useRouter } from "next/navigation";
 type TechCategory = 'frontend' | 'backend';
 
 export default function TechStacks() {
-  
+
   const router = useRouter();
 
   const techStacks: Record<TechCategory, string[]> = {
@@ -42,7 +42,7 @@ export default function TechStacks() {
   };
 
   return (
-    <section className="mb-1 relative overflow-hidden border border-gray-700 rounded-2xl bg-[#0a0a0a] p-6 col-span-1 space-y-4 group tech-stacks-fade-in cursor-pointer">
+    <section className="mb-1 relative overflow-hidden border border-gray-700 rounded-2xl p-4 col-span-1 space-y-4 group tech-stacks-fade-in cursor-pointer">
       {/* Header */}
       <div className="flex items-center justify-between">
         <div className="flex items-center gap-2">
@@ -50,7 +50,7 @@ export default function TechStacks() {
             <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M19.428 15.428a2 2 0 00-1.022-.547l-2.387-.477a6 6 0 00-3.86.517l-.318.158a6 6 0 01-3.86.517L6.05 15.21a2 2 0 00-1.806.547M8 4h8l-1 1v5.172a2 2 0 00.586 1.414l5 5c1.26 1.26.367 3.414-1.415 3.414H4.828c-1.782 0-2.674-2.154-1.414-3.414l5-5A2 2 0 009 10.172V5L8 4z" />
           </svg>
           <h2 className="text-xl font-bold bg-gradient-to-r from-white to-gray-300 bg-clip-text text-transparent">
-            Tech Stack
+            Tech Stacks
           </h2>
         </div>
         <button 

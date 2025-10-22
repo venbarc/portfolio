@@ -6,6 +6,7 @@ import TechStacks from "./components/techStacks/TechStacks";
 import OtherStacks from "./components/otherStacks/OtherStacks";
 import Footer from "./components/footer/Footer";
 import MyContributions from "./components/myContributions/MyContributions";
+import ProjectPlayground from "./components/projectPlayground/ProjectPlayground";
 
 export default function Home() {
   return (
@@ -15,8 +16,6 @@ export default function Home() {
 
         {/* Main Layout */}
         <div className="flex flex-col sm:flex-row gap-2 items-start mt-4 w-full">
-          
-          {/* left Column - 40% */}
           <div className="w-full sm:w-[40%] gap-3">
             <div>
               <BeyondCoding />
@@ -25,21 +24,16 @@ export default function Home() {
             <div>
             </div>
           </div>
-
-          {/* Right Column - 60% */}
           <div className="w-full sm:w-[60%]">
             <Experience />
           </div>
         </div>
 
         <div className="flex flex-col sm:flex-row gap-2 items-start mt-2 w-full">
-          {/* Left Column - 60% */}
-          <div className="w-full sm:w-[50%]">
+          <div className="w-full sm:w-[60%]">
               <TechStacks />
           </div>
-
-          {/* Right Column - 40% */}
-          <div className="w-full sm:w-[50%] gap-2">
+          <div className="w-full sm:w-[40%] gap-2">
             <div>
               <OtherStacks/>
             </div>
@@ -47,11 +41,11 @@ export default function Home() {
         </div>
         
         <div className="flex flex-col sm:flex-row gap-2 items-start mt-2 w-full">
-          <div className="w-full sm:w-[60%]">
-              <MyContributions />
+          <div className="w-full sm:w-[35%]">
+              <ProjectPlayground />
           </div>
-          <div className="w-full sm:w-[40%]">
-              {/* <MyContributions /> */}
+          <div className="w-full sm:w-[65%]">
+              <MyContributions />
           </div>
         </div>
 

@@ -86,7 +86,7 @@ export default function OtherStacks() {
   };
 
   return (
-    <section className="relative overflow-hidden border border-gray-700 rounded-2xl bg-[#0a0a0a] p-[6%] sm:p-[13%] col-span-1 space-y-4 group other-stack-fade-in cursor-pointer">
+    <section className="relative overflow-hidden border border-gray-700 rounded-2xl bg-[#0a0a0a] p-[6%] sm:p-[8%] col-span-1 space-y-4 group other-stack-fade-in cursor-pointer">
       {/* Header */}
       <div className="flex items-center justify-between">
         <div className="flex items-center gap-2">

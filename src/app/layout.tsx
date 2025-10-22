@@ -17,6 +17,9 @@ const geistMono = Geist_Mono({
 export const metadata: Metadata = {
   title: "Ben Obre - Full Stack Developer",
   description: "Full Stack Developer",
+  icons: {
+    icon: "/img/letter-b.png", 
+  },
 };
 
 export default function RootLayout({
