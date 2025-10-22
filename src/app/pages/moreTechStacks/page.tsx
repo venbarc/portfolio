@@ -37,9 +37,11 @@ import {
   Palette,
   Database,
   Workflow,
-  Cpu
-} from 'lucide-react';
-import "./moreTechStacks.css"
+  Cpu,
+  Mountain, 
+  Github
+} from "lucide-react"; 
+import "./moreTechStacks.css";
 
 export default function MoreTechStacks() {
   const router = useRouter();
@@ -47,12 +49,11 @@ export default function MoreTechStacks() {
   const techCategories = {
     frontend: [
       "JavaScript", "TypeScript", "React", "Next.js", "Tailwind CSS", "Bootstrap",
-      "SCSS", "Styled Components", "Vite", "Webpack", "Ajax", "JQuery"
+      "SCSS", "Styled Components", "Vite", "Webpack", "Ajax", "JQuery", "Alpine"
     ],
     backend: [
-      "Python", "Java","C++", "C#", "PHP", "Laravel", "APi Integration", 
-      "PostgreSQL", "MySQL",
-      "OAuth", "REST"
+      "Python", "Java", "C++", "C#", "PHP", "Laravel", "API Integration", 
+      "PostgreSQL", "MySQL", "OAuth", "REST"
     ],
     devops: [
       "AWS", "GitHub Actions", "GitLab CI", "Cpanel", "Linux CI/CD"
@@ -62,7 +63,7 @@ export default function MoreTechStacks() {
     ],
     security: [
       "Laravel Sanctum", "Bearer Token", "JWT Authentication", "CSRF Protection",
-      "CORS",  "Input Validation", "SQL Injection Prevention", "XSS Protection",
+      "CORS", "Input Validation", "SQL Injection Prevention", "XSS Protection",
       "Laravel Security", "API Authentication", "Middleware Protection", "SonarQube"
     ],
     cms: [
@@ -70,7 +71,7 @@ export default function MoreTechStacks() {
     ],
     tools: [
       "Git", "GitHub", "GitLab", "VS Code", "Canvas",
-      "Discord", "Teams", "JIRA", "Vs Code Extensions", "ClickUp", "Termius"
+      "Discord", "Teams", "JIRA", "VS Code Extensions", "ClickUp", "Termius"
     ]
   };
 
@@ -84,37 +85,38 @@ export default function MoreTechStacks() {
       "Tailwind CSS": <Wind className="w-4 h-4" />,
       "Bootstrap": <Bold className="w-4 h-4" />,
       "SCSS": <Diamond className="w-4 h-4" />,
-      "Styled Components": <Diamond className="w-4 h-4" />, // Using Diamond as fallback
+      "Styled Components": <Diamond className="w-4 h-4" />,
       "Vite": <Zap className="w-4 h-4" />,
       "Webpack": <Package className="w-4 h-4" />,
       "Ajax": <RefreshCw className="w-4 h-4" />,
       "JQuery": <DollarSign className="w-4 h-4" />,
-      
+      "Alpine": <Mountain className="w-4 h-4" />, 
+
       // Backend
-      "Python": <Code2 className="w-4 h-4" />, // Using Code2 as fallback for Python
+      "Python": <Code2 className="w-4 h-4" />,
       "Java": <Coffee className="w-4 h-4" />,
       "C++": <Plus className="w-4 h-4" />,
       "C#": <Hash className="w-4 h-4" />,
-      "PHP": <Code2 className="w-4 h-4" />, // Using Code2 as fallback for PHP
+      "PHP": <Code2 className="w-4 h-4" />,
       "Laravel": <Flame className="w-4 h-4" />,
-      "APi Integration": <Workflow className="w-4 h-4" />,
+      "API Integration": <Workflow className="w-4 h-4" />,
       "PostgreSQL": <Database className="w-4 h-4" />,
       "MySQL": <Database className="w-4 h-4" />,
       "OAuth": <Key className="w-4 h-4" />,
       "REST": <Globe className="w-4 h-4" />,
-      
+
       // DevOps
       "AWS": <Cloud className="w-4 h-4" />,
       "GitHub Actions": <Cog className="w-4 h-4" />,
       "GitLab CI": <Gitlab className="w-4 h-4" />,
       "Cpanel": <Settings className="w-4 h-4" />,
-      "Linux CI/CD": <Cog className="w-4 h-4" />, // Using Cog as fallback
-      
+      "Linux CI/CD": <Cog className="w-4 h-4" />,
+
       // AI
       "PyTorch": <Flame className="w-4 h-4" />,
       "Gemeni": <Brain className="w-4 h-4" />,
       "OpenAI": <Brain className="w-4 h-4" />,
-      
+
       // Security
       "Laravel Sanctum": <Shield className="w-4 h-4" />,
       "Bearer Token": <Ticket className="w-4 h-4" />,
@@ -128,30 +130,30 @@ export default function MoreTechStacks() {
       "API Authentication": <Key className="w-4 h-4" />,
       "Middleware Protection": <Shield className="w-4 h-4" />,
       "SonarQube": <Settings className="w-4 h-4" />,
-      
+
       // CMS
       "WordPress": <MessageSquare className="w-4 h-4" />,
       "Xenforo": <MessageSquare className="w-4 h-4" />,
-      
+
       // Tools
       "Git": <Code2 className="w-4 h-4" />,
-      "GitHub": <Gitlab className="w-4 h-4" />,
+      "GitHub": <Github className="w-4 h-4" />,
       "GitLab": <Gitlab className="w-4 h-4" />,
       "VS Code": <Code2 className="w-4 h-4" />,
       "Canvas": <Palette className="w-4 h-4" />,
       "Discord": <MessageSquare className="w-4 h-4" />,
       "Teams": <Users className="w-4 h-4" />,
       "JIRA": <Target className="w-4 h-4" />,
-      "Vs Code Extensions": <Puzzle className="w-4 h-4" />,
+      "VS Code Extensions": <Puzzle className="w-4 h-4" />,
       "ClickUp": <ClipboardList className="w-4 h-4" />,
-      "Termius": <Wrench className="w-4 h-4" />
+      "Termius": <Wrench className="w-4 h-4" />,
     };
-    
+
     return icons[tech] || <Cpu className="w-4 h-4" />;
   };
 
   const handleBackToHome = () => {
-    router.push('/');
+    router.push("/");
   };
 
   return (
@@ -171,32 +173,26 @@ export default function MoreTechStacks() {
           <h1 className="text-3xl font-bold text-white">Tech Stack</h1>
         </div>
 
-        {/* Clean Tech Categories with Lucide Icons */}
+        {/* Tech Categories */}
         <div className="space-y-8 more-tech-stacks-fade-in">
           {Object.entries(techCategories).map(([category, technologies]) => (
             <div key={category} className="group">
-              {/* Category Header */}
-              <div className="mb-4">
-                <h2 className="text-xl font-bold text-white mb-1">
-                  {category === 'devops' ? 'DevOps & Cloud' : 
-                   category === 'ai' ? 'AI & Machine Learning' : 
-                   category === 'cms' ? 'CMS & Forums' : 
-                   category === 'tools' ? 'Developer Tools' : 
-                   category.charAt(0).toUpperCase() + category.slice(1)}
-                </h2>
-              </div>
+              <h2 className="text-xl font-bold text-white mb-2 capitalize">
+                {category === 'devops' ? 'DevOps & Cloud' :
+                 category === 'ai' ? 'AI & Machine Learning' :
+                 category === 'cms' ? 'CMS & Forums' :
+                 category === 'tools' ? 'Developer Tools' :
+                 category}
+              </h2>
 
-              {/* Technology Tags with Lucide Icons */}
               <div className="flex flex-wrap gap-2">
                 {technologies.map((tech, index) => (
                   <span
                     key={tech}
-                    className="px-3 py-2 text-base rounded-lg bg-white/5 text-gray-300 hover:bg-white/10 hover:text-white transition-all duration-300 flex items-center gap-2"
-                    style={{ animationDelay: `${index * 50}ms` }}
+                    className="px-3 py-2 text-base rounded-lg bg-white/5 text-gray-300 hover:bg-white/10 hover:text-white transition-all flex items-center gap-2"
+                    style={{ animationDelay: `${index * 40}ms` }}
                   >
-                    <span className="text-blue-300">
-                      {getTechIcon(tech)}
-                    </span>
+                    <span className="text-blue-300">{getTechIcon(tech)}</span>
                     {tech}
                   </span>
                 ))}
