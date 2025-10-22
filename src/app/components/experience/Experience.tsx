@@ -26,6 +26,11 @@ export default function Experience() {
       year: "Sept 2022 - 2023",
     },
     {
+      title: "Contractual Projects",
+      description: "Work on side projects",
+      year: "2019",
+    },
+    {
       title: "Hello World",
       description: "Wrote my 1st line of code",
       year: "2018",
@@ -33,7 +38,7 @@ export default function Experience() {
   ];
 
   return (
-    <section className="border border-gray-700 rounded-2xl p-6 bg-[#0a0a0a] text-gray-200 experience-fade-in">
+    <section className="mb-1 border border-gray-700 rounded-2xl p-5 bg-[#0a0a0a] text-gray-200 experience-fade-in">
       {/* Header */}
       <div className="flex items-center gap-2 mb-6">
         <Briefcase className="w-5 h-5 text-blue-400" />

@@ -15,7 +15,7 @@ export default function Resume() {
   return (
     <section 
       onClick={handleDownload}
-      className="h-full border border-gray-700 rounded-2xl px-6 py-9 flex items-center justify-between resume-fade-in bg-gradient-to-br from-gray-900 to-gray-800 hover:from-gray-800 hover:to-gray-700 transition-all duration-300 group cursor-pointer"
+      className="h-full border border-gray-700 rounded-2xl px-6  py-10 sm:py-11 flex items-center justify-between resume-fade-in bg-gradient-to-br from-gray-900 to-gray-800 hover:from-gray-800 hover:to-gray-700 transition-all duration-300 group cursor-pointer"
     >
       
       {/* Left Side - Icon */}

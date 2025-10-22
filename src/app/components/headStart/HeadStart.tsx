@@ -7,7 +7,7 @@ import { FaFacebook, FaInstagram } from "react-icons/fa";
 
 export default function HeadStart() {
   return (
-    <header className="mt-[8%] head-start-fade-in">
+    <header className="mt-[6%] head-start-fade-in">
       {/* Container with responsive layout */}
       <div className="flex flex-col lg:flex-row justify-between gap-4">
         
@@ -21,16 +21,13 @@ export default function HeadStart() {
 
           <div className="flex flex-col">
             {/* Name + Verified */}
-            <div className="flex items-baseline space-x-2">
+            <div className="flex items-center space-x-2">
               <h1 className="text-2xl font-bold tracking-wide">Ben Obre</h1>
-              <svg
-                viewBox="0 0 22 22"
-                xmlns="http://www.w3.org/2000/svg"
-                className="h-6 w-6 text-blue-500 flex-shrink-0"
-                aria-label="Verified user"
-              >
-                <path d="M20.396 11c-.018-.646-.215-1.275-..." fill="currentColor"></path>
-              </svg>
+              <img
+                  src="/img/verified.png"
+                  className="h-6 w-6"
+                  alt="Verified user"
+              />
             </div>
 
             {/* Location */}
@@ -61,7 +58,7 @@ export default function HeadStart() {
         </div>
 
         {/* RIGHT SECTION */}
-        <div className="flex flex-col items-end gap-3 w-full lg:w-auto">
+        <div className="flex flex-col justify-start gap-3 w-full lg:w-auto">
           {/* Schedule button */}
           <div className="flex justify-end w-full">
             <a
@@ -70,7 +67,7 @@ export default function HeadStart() {
               className="flex items-center justify-center gap-2 px-5 py-3 text-sm font-medium rounded-lg bg-blue-500 text-white hover:bg-blue-600 transition-all duration-200 whitespace-nowrap w-[410px]"
             >
               <FaRegCalendarAlt className="text-lg" />
-              Schedule a Call
+              Schedule a call
             </a>
           </div>
 
