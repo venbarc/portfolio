@@ -1,10 +1,10 @@
-import BeyondCoding from "./components/beyondCoding/BeyondCoding";
-import Experience from "./components/experience/Experience";
-import HeadStart from "./components/headStart/HeadStart";
-import Resume from "./components/resume/Resume";
-import TechStacks from "./components/techStacks/TechStacks";
-import OtherStacks from "./components/otherStacks/OtherStacks";
 import Footer from "./components/footer/Footer";
+import Resume from "./components/resume/Resume";
+import HeadStart from "./components/headStart/HeadStart";
+import TechStacks from "./components/techStacks/TechStacks";
+import Experience from "./components/experience/Experience";
+import OtherStacks from "./components/otherStacks/OtherStacks";
+import BeyondCoding from "./components/beyondCoding/BeyondCoding";
 import MyContributions from "./components/myContributions/MyContributions";
 import ProjectPlayground from "./components/projectPlayground/ProjectPlayground";
 
