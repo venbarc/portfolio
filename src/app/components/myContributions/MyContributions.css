@@ -1,0 +1,35 @@
+
+
+
+@keyframes fade-in {
+  from {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.my-contributions-fade-in {
+  animation: fade-in 3.1s ease-in-out;
+}
+
+.bento-card {
+  background: rgba(10, 10, 10, 0.8);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 1rem;
+  backdrop-filter: blur(10px);
+}
+
+/* Hover effects */
+.group:hover .bento-card:not(:hover) {
+  opacity: 0.8;
+}
+
+.bento-card:hover {
+  transform: translateY(-2px);
+  border-color: rgba(59, 130, 246, 0.3);
+  box-shadow: 0 10px 30px -10px rgba(0, 0, 0, 0.3);
+}

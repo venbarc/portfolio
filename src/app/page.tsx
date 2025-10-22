@@ -5,6 +5,7 @@ import Resume from "./components/resume/Resume";
 import TechStacks from "./components/techStacks/TechStacks";
 import OtherStacks from "./components/otherStacks/OtherStacks";
 import Footer from "./components/footer/Footer";
+import MyContributions from "./components/myContributions/MyContributions";
 
 export default function Home() {
   return (
@@ -45,6 +46,15 @@ export default function Home() {
           </div>
         </div>
         
+        <div className="flex flex-col sm:flex-row gap-2 items-start mt-2 w-full">
+          <div className="w-full sm:w-[60%]">
+              <MyContributions />
+          </div>
+          <div className="w-full sm:w-[40%]">
+              {/* <MyContributions /> */}
+          </div>
+        </div>
+
         <Footer />
 
       </div>

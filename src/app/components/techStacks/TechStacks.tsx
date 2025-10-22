@@ -5,6 +5,7 @@ import { useRouter } from "next/navigation";
 type TechCategory = 'frontend' | 'backend';
 
 export default function TechStacks() {
+  
   const router = useRouter();
 
   const techStacks: Record<TechCategory, string[]> = {
