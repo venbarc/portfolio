@@ -49,7 +49,7 @@ export default function Footer() {
             </a>
             {/* Facebook */}
             <a
-                href="https://facebook.com/yourusername"
+                href="https://www.facebook.com/benobre24/"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="text-gray-400 hover:text-blue-400 transition-colors duration-300"

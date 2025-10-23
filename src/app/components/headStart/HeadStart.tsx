@@ -1,9 +1,9 @@
 "use client";
 import "./HeadStart.css";
 import { MdEmail } from "react-icons/md";
-import { FaGithub } from "react-icons/fa";
-import { FaRegCalendarAlt } from "react-icons/fa";
-import { FaFacebook, FaInstagram } from "react-icons/fa";
+import { 
+  FaGithub, FaRegCalendarAlt, FaFacebook, FaInstagram , FaLinkedin 
+} from "react-icons/fa";
 
 export default function HeadStart() {
   return (
@@ -31,25 +31,16 @@ export default function HeadStart() {
             </div>
 
             {/* Location */}
-            <div className="flex items-center gap-2 mt-3">
+            <div className="flex items-center gap-2 my-3">
               <img src="img/ph-logo.png" alt="Philippines logo" className="w-4 h-4 object-cover" />
               <span className="text-gray-300">Metro Manila, Makati City</span>
             </div>
 
             {/* Role */}
-            <p className="text-base font-semibold text-gray-300 mt-1">Full Stack Developer</p>
+            <p className="text-base font-semibold text-gray-300 my-1">Full Stack Developer</p>
 
             {/* GitHub + Phone */}
-            <div className="flex items-center gap-2 mt-2">
-              <a
-                href="https://github.com/venbarc"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="flex items-center gap-2 px-4 py-2 text-sm font-medium rounded-lg border border-gray-700 text-gray-200 hover:bg-gray-800 transition-all duration-200"
-              >
-                <FaGithub className="text-xs" />
-                venbarc
-              </a>
+            <div className="flex items-center gap-2 my-2">
               <a href="tel:+639393370186" className="text-xs hover:text-blue-400 transition-colors">
                 +63 9393370186
               </a>
@@ -64,11 +55,11 @@ export default function HeadStart() {
             <a
               target="_blank"
               href="https://calendly.com/bentf24/30min"
-              className="flex items-center justify-center gap-2 px-4 py-3 text-sm font-medium rounded-lg bg-blue-500 text-white hover:bg-blue-600 transition-all duration-200 whitespace-nowrap w-full sm:w-[200px] lg:w-[250px]"
+              className="flex items-center justify-center gap-2 px-4 py-3 text-sm font-medium rounded-lg bg-blue-500 text-white hover:bg-blue-600 transition-all duration-200 whitespace-nowrap w-full"
             >
               <FaRegCalendarAlt className="text-lg" />
               Schedule a call
-            </a>
+            </a>                                                                    
           </div>
 
           {/* Social buttons - matching Schedule button width exactly */}
@@ -77,31 +68,31 @@ export default function HeadStart() {
               <a
                 href="https://mail.google.com/mail/?view=cm&fs=1&to=bentf24@gmail.com&su=Hello&body=Hi%20there"
                 target="_blank"
-                rel="noopener noreferrer"
+                rel="noopener noreferrer"                                  
                 className="flex-1 flex items-center justify-center gap-2 px-3 py-2 text-xs font-medium rounded-lg border border-gray-700 text-gray-200 hover:bg-gray-800 transition-all duration-200 whitespace-nowrap"
               >
-                <MdEmail className="text-lg text-white" />
+                <MdEmail className="text-lg" />
                 <span className="hidden 2xl:inline">Email</span>
               </a>
 
               <a
-                href="https://www.facebook.com/benobre24"
+                href="https://github.com/venbarc"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="flex-1 flex items-center justify-center gap-2 px-3 py-2 text-xs font-medium rounded-lg border border-gray-700 text-gray-200 hover:bg-gray-800 transition-all duration-200 whitespace-nowrap"
               >
-                <FaFacebook className="text-lg text-blue-500" />
-                <span className="hidden 2xl:inline">Facebook</span>
+                <FaGithub className="text-lg" />
+                <span className="hidden 2xl:inline">Github</span>
               </a>
 
               <a
-                href="https://www.instagram.com/bndct24/"
+                href="https://www.linkedin.com/in/benedict-barcebal-24b238276/"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="flex-1 flex items-center justify-center gap-2 px-3 py-2 text-xs font-medium rounded-lg border border-gray-700 text-gray-200 hover:bg-gray-800 transition-all duration-200 whitespace-nowrap"
               >
-                <FaInstagram className="text-lg text-pink-500" />
-                <span className="hidden 2xl:inline">Instagram</span>
+                <FaLinkedin className="text-lg" />
+                <span className="hidden 2xl:inline">Linkedin</span>
               </a>
             </div>
           </div>

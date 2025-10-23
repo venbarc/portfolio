@@ -15,36 +15,34 @@ export default function Home() {
         <HeadStart />
 
         {/* Main Layout */}
-        <div className="flex flex-col sm:flex-row gap-2 items-stretch mt-4 w-full">
-          <div className="w-full sm:w-[40%] gap-3 h-full">
+        <div className="flex flex-col xl:flex-row gap-2 items-stretch mt-4 w-full">
+          <div className="w-full xl:w-[40%] gap-3 h-full">
             <div>
               <BeyondCoding />
             </div>
-              <Resume />              
-            <div>
-            </div>
+            <Resume />              
           </div>
-          <div className="w-full sm:w-[60%]">
+          <div className="w-full xl:w-[60%]">
             <Experience />
           </div>
         </div>
 
-        <div className="flex flex-col sm:flex-row gap-2 items-stretch mt-2 w-full">
-          <div className="w-full sm:w-[60%]">
+        <div className="flex flex-col xl:flex-row gap-2 items-stretch mt-2 w-full">
+          <div className="w-full xl:w-[60%]">
               <TechStacks />
           </div>
-          <div className="w-full sm:w-[40%] gap-2">
+          <div className="w-full xl:w-[40%] gap-2">
             <div>
               <OtherStacks/>
             </div>
           </div>
         </div>
         
-        <div className="flex flex-col sm:flex-row gap-2 items-stretch mt-2 w-full">
-          <div className="w-full sm:w-[35%]">
+        <div className="flex flex-col xl:flex-row gap-2 items-stretch mt-2 w-full">
+          <div className="w-full xl:w-[35%]">
               <ProjectPlayground />
           </div>
-          <div className="w-full sm:w-[65%]">
+          <div className="w-full xl:w-[65%]">
               <MyContributions />
           </div>
         </div>
