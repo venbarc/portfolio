@@ -41,8 +41,12 @@ export default function HeadStart() {
 
             {/* GitHub + Phone */}
             <div className="flex items-center gap-2 my-2">
-              <a href="tel:+639393370186" className="text-xs hover:text-blue-400 transition-colors">
-                +63 9393370186
+              <a
+                href="tel:+639393370186"
+                rel="noopener noreferrer"
+                className="flex-1 flex items-center justify-center gap-2 px-3 py-2 text-xs font-medium rounded-lg border border-gray-700 text-gray-200 hover:bg-gray-800 transition-all duration-200 whitespace-nowrap"
+              >
+              <span className="">+63 9393370186</span>
               </a>
             </div>
           </div>
