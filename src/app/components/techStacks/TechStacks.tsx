@@ -42,7 +42,7 @@ export default function TechStacks() {
   };
 
   return (
-    <section className="mb-1 relative overflow-hidden border border-gray-700 rounded-2xl p-4 col-span-1 space-y-4 group tech-stacks-fade-in cursor-pointer">
+    <section className="mb-1 h-full relative overflow-hidden border border-gray-700 rounded-2xl p-4 col-span-1 space-y-4 group tech-stacks-fade-in cursor-pointer">
       {/* Header */}
       <div className="flex items-center justify-between">
         <div className="flex items-center gap-2">

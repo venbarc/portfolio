@@ -22,7 +22,7 @@ export default function ProjectPlayground() {
   ];
 
   return (
-    <section className="relative overflow-hidden border border-gray-700 rounded-2xl p-6 sm:py-13 col-span-1 space-y-4 group project-playground-fade-in">
+    <section className="h-full relative overflow-hidden border border-gray-700 rounded-2xl p-6 sm:py-13 col-span-1 space-y-4 group project-playground-fade-in">
       {/* Header */}
       <div className="flex items-center justify-between">
         <div className="flex items-center gap-2">

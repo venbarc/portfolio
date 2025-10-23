@@ -15,8 +15,8 @@ export default function Home() {
         <HeadStart />
 
         {/* Main Layout */}
-        <div className="flex flex-col sm:flex-row gap-2 items-start mt-4 w-full">
-          <div className="w-full sm:w-[40%] gap-3">
+        <div className="flex flex-col sm:flex-row gap-2 items-stretch mt-4 w-full">
+          <div className="w-full sm:w-[40%] gap-3 h-full">
             <div>
               <BeyondCoding />
             </div>
@@ -29,7 +29,7 @@ export default function Home() {
           </div>
         </div>
 
-        <div className="flex flex-col sm:flex-row gap-2 items-start mt-2 w-full">
+        <div className="flex flex-col sm:flex-row gap-2 items-stretch mt-2 w-full">
           <div className="w-full sm:w-[60%]">
               <TechStacks />
           </div>
@@ -40,7 +40,7 @@ export default function Home() {
           </div>
         </div>
         
-        <div className="flex flex-col sm:flex-row gap-2 items-start mt-2 w-full">
+        <div className="flex flex-col sm:flex-row gap-2 items-stretch mt-2 w-full">
           <div className="w-full sm:w-[35%]">
               <ProjectPlayground />
           </div>

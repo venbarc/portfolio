@@ -38,7 +38,7 @@ export default function Experience() {
   ];
 
   return (
-    <section className="mb-1 border border-gray-700 rounded-2xl p-5 bg-[#0a0a0a] text-gray-200 experience-fade-in">
+    <section className="mb-1 border h-full border-gray-700 rounded-2xl p-5 bg-[#0a0a0a] text-gray-200 experience-fade-in">
       {/* Header */}
       <div className="flex items-center gap-2 mb-6">
         <Briefcase className="w-5 h-5 text-blue-400" />

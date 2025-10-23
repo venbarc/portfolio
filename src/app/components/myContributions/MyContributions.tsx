@@ -39,7 +39,7 @@ export default function MyContributions() {
   };
 
   return (
-    <section className="relative overflow-hidden border border-gray-700 rounded-2xl p-[1.40rem] col-span-1 space-y-4 group my-contributions-fade-in">
+    <section className="h-full relative overflow-hidden border border-gray-700 rounded-2xl p-[1.40rem] col-span-1 space-y-4 group my-contributions-fade-in">
       {/* Header */}
       <div className="flex items-center justify-between">
         <div className="flex items-center gap-2">
