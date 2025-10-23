@@ -64,44 +64,46 @@ export default function HeadStart() {
             <a
               target="_blank"
               href="https://calendly.com/bentf24/30min"
-              className="flex items-center justify-center gap-2 px-5 py-3 text-sm font-medium rounded-lg bg-blue-500 text-white hover:bg-blue-600 transition-all duration-200 whitespace-nowrap w-[410px]"
+              className="flex items-center justify-center gap-2 px-4 py-3 text-sm font-medium rounded-lg bg-blue-500 text-white hover:bg-blue-600 transition-all duration-200 whitespace-nowrap w-full sm:w-[200px] lg:w-[250px]"
             >
               <FaRegCalendarAlt className="text-lg" />
               Schedule a call
             </a>
           </div>
 
-          {/* Social buttons */}
-          <div className="flex w-full gap-3">
-            <a
-              href="https://mail.google.com/mail/?view=cm&fs=1&to=bentf24@gmail.com&su=Hello&body=Hi%20there"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="flex-1 flex items-center justify-center gap-2 px-5 py-2 text-xs font-medium rounded-lg border border-gray-700 text-gray-200 hover:bg-gray-800 transition-all duration-200 whitespace-nowrap"
-            >
-              <MdEmail className="text-lg text-white" />
-              Email
-            </a>
+          {/* Social buttons - matching Schedule button width exactly */}
+          <div className="flex justify-end w-full">
+            <div className="flex gap-3 w-full">
+              <a
+                href="https://mail.google.com/mail/?view=cm&fs=1&to=bentf24@gmail.com&su=Hello&body=Hi%20there"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="flex-1 flex items-center justify-center gap-2 px-3 py-2 text-xs font-medium rounded-lg border border-gray-700 text-gray-200 hover:bg-gray-800 transition-all duration-200 whitespace-nowrap"
+              >
+                <MdEmail className="text-lg text-white" />
+                <span className="hidden 2xl:inline">Email</span>
+              </a>
 
-            <a
-              href="https://www.facebook.com/benobre24"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="flex-1 flex items-center justify-center gap-2 px-5 py-2 text-xs font-medium rounded-lg border border-gray-700 text-gray-200 hover:bg-gray-800 transition-all duration-200 whitespace-nowrap"
-            >
-              <FaFacebook className="text-lg text-blue-500" />
-              Facebook
-            </a>
+              <a
+                href="https://www.facebook.com/benobre24"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="flex-1 flex items-center justify-center gap-2 px-3 py-2 text-xs font-medium rounded-lg border border-gray-700 text-gray-200 hover:bg-gray-800 transition-all duration-200 whitespace-nowrap"
+              >
+                <FaFacebook className="text-lg text-blue-500" />
+                <span className="hidden 2xl:inline">Facebook</span>
+              </a>
 
-            <a
-              href="https://www.instagram.com/bndct24/"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="flex-1 flex items-center justify-center gap-2 px-5 py-2 text-xs font-medium rounded-lg border border-gray-700 text-gray-200 hover:bg-gray-800 transition-all duration-200 whitespace-nowrap"
-            >
-              <FaInstagram className="text-lg text-pink-500" />
-              Instagram
-            </a>
+              <a
+                href="https://www.instagram.com/bndct24/"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="flex-1 flex items-center justify-center gap-2 px-3 py-2 text-xs font-medium rounded-lg border border-gray-700 text-gray-200 hover:bg-gray-800 transition-all duration-200 whitespace-nowrap"
+              >
+                <FaInstagram className="text-lg text-pink-500" />
+                <span className="hidden 2xl:inline">Instagram</span>
+              </a>
+            </div>
           </div>
         </div>
 
