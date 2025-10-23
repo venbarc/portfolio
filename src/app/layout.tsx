@@ -30,12 +30,12 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased bg-[#0a0a0a] text-gray-100`}
+        className={`${geistSans.variable} ${geistMono.variable} antialiased min-h-screen bg-[#0a0a0a] text-gray-100`}
       >
-        <div className="min-h-screen bg-[#0a0a0a] text-gray-100">
+        {/* <div className=" bg-[#0a0a0a] text-gray-100"> */}
           <HideNextDevTools />
           {children}
-        </div>
+        {/* </div> */}
       </body>
     </html>
   );
