@@ -7,7 +7,7 @@ export default function ProjectPlayground() {
     {
       title: "Image to Text",
       description: "Get all Text from an image (best use for grocery receipts for logging)",
-      url: "https://image-to-text-tawny.vercel.app/",
+      url: "https://image-to-text-nextjs-two.vercel.app/",
     },
     {
       title: "Physical Fitness", 
