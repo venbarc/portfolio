@@ -16,7 +16,7 @@ export default function HeadStart() {
           <img
             src="img/james-reid.jpg"
             alt="Profile"
-            className="w-35 h-35 sm:w-40 sm:h-40 object-cover"
+            className="w-35 h-35 sm:w-40 sm:h-40 object-cover rounded-2xl"
           />
 
           <div className="flex flex-col">
@@ -25,7 +25,7 @@ export default function HeadStart() {
               <h1 className="text-2xl font-bold tracking-wide">Ben Obre</h1>
               <img
                   src="/img/verified.png"
-                  className="h-6 w-6"
+                  className="h-6 w-6 border "
                   alt="Verified user"
               />
             </div>
