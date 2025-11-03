@@ -21,7 +21,7 @@ export default function ProjectPlayground() {
     },
     {
       title: "Spotify Recommendation",
-      description: "Connect and get recommendations based on your top artist (Work in Progress)",
+      description: "Connect and get recommendations based on your top artist",
       url: "https://spotify-suggestions-ochre.vercel.app/",
     },
   ];
