@@ -1,7 +1,6 @@
 
 import "./globals.css";
 import type { Metadata } from "next";
-import HideNextDevTools from "./HideNextDevTools";
 import { Geist, Geist_Mono } from "next/font/google";
 
 const geistSans = Geist({
@@ -34,7 +33,6 @@ export default function RootLayout({
         style={{ backgroundColor: "#0a0a0a!important", color: "#f3f4f6" }}   
       >
         <div className="bg-[#0a0a0a] text-gray-100">
-          <HideNextDevTools />
           {children}
         </div>
       </body>
