@@ -25,7 +25,7 @@ export default function HeadStart() {
               <h1 className="text-2xl font-bold tracking-wide">Ben Obre</h1>
               <img
                   src="/img/verified.png"
-                  className="h-6 w-6 border "
+                  className="h-6 w-6"
                   alt="Verified user"
               />
             </div>
