@@ -56,10 +56,10 @@ export default function MoreTechStacks() {
       "PostgreSQL", "MySQL", "OAuth", "REST"
     ],
     devops: [
-      "AWS", "GitHub Actions", "GitLab CI", "Cpanel", "Linux CI/CD"
+      "AWS","IAM", "EC2", "Cloudways", "GitHub Actions", "GitLab CI", "Cpanel", "Linux CI/CD"
     ],
     ai: [
-      "PyTorch", "Gemeni", "OpenAI",
+      "PyTorch", "Gemeni", "OpenAI", "Claude"
     ],
     security: [
       "Laravel Sanctum", "Bearer Token", "JWT Authentication", "CSRF Protection",
@@ -71,7 +71,7 @@ export default function MoreTechStacks() {
     ],
     tools: [
       "Git", "GitHub", "GitLab", "VS Code", "Canvas",
-      "Discord", "Teams", "JIRA", "VS Code Extensions", "ClickUp", "Termius"
+      "Discord", "Teams", "JIRA", "VS Code Extensions", "ClickUp", "Termius", "Trello"
     ]
   };
 
